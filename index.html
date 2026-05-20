@@ -4,73 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Jayden Niepce</title>
-    <meta name="description" content="CV van Jayden Niepce">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="CV van Jayden Niepce, scholier met interesse in software development en front-end development.">
+    <link rel="stylesheet" href="cs.css">
 </head>
 <body>
+    <main class="cv">
+        <header class="header">
+            <div class="header-content">
+                <div>
+                    <h1>Jayden Niepce</h1>
+                    <p class="functie">Schoolier</p>
+                    <address>
+                        Limburg · <a href="tel:060611696903">06-0611696903</a> ·
+                        <a href="mailto:Jayden2008.niepce@gmail.com">Jayden2008.niepce@gmail.com</a>
+                    </address>
+                </div>
+                <img class="profile-photo" src="Profiel.jpg" alt="Profielfoto van Jayden Niepce">
+            </div>
+        </header>
 
-<main class="cv">
+        <section aria-labelledby="profiel-heading">
+            <h2 id="profiel-heading">Profiel</h2>
+            <p>
+                Gemotiveerde starter met passie voor coderen. Sterk in HTML, CSS en JavaScript,
+                met focus op gebruiksvriendelijke en overzichtelijke interfaces.
+            </p>
+        </section>
 
-<header class="header">
-    <div class="header-content">
-        <div>
-            <h1>Jayden Niepce</h1>
-            <p class="functie">Software Developer Student</p>
+        <section aria-labelledby="werkervaring-heading">
+            <h2 id="werkervaring-heading">Werkervaring</h2>
+            <article>
+                <h3>Vakken vuller</h3>
+                <p class="periode"><time datetime="2024-06">06/2024</time> – <time datetime="2025-02">02/2025</time></p>
+                <ul>
+                    <li>Schappen gevuld en producten netjes aangevuld bij Albert Heijn.</li>
+                    <li>Geholpen om de winkel overzichtelijk en verzorgd te houden.</li>
+                    <li>Samen met collega’s gezorgd dat klanten snel konden vinden wat ze nodig hadden.</li>
+                </ul>
+            </article>
 
-            <address>
-                Limburg ·
-                <a href="mailto:Jayden2008.niepce@gmail.com">
-                    Jayden2008.niepce@gmail.com
-                </a>
-            </address>
-        </div>
+            <article>
+                <h3>Zwembad medewerker</h3>
+                <p class="periode"><time datetime="2025-04">04/2025</time> – heden</p>
+                <ul>
+                    <li>Help mensen bij Van Tongeren in het water en aan de kant.</li>
+                    <li>Ondersteun bezoekers en houd toezicht zodat alles veilig en rustig verloopt.</li>
+                </ul>
+            </article>
+        </section>
 
-        <img class="profile-photo" src="Profiel.jpg" alt="Jayden">
-    </div>
-</header>
+        <section aria-labelledby="opleiding-heading">
+            <h2 id="opleiding-heading">Opleiding</h2>
+            <article>
+                <h3>MBO/ICT · Vista College</h3>
+                <p class="periode"><time datetime="2025">2025</time> – <time datetime="2026">2026</time></p>
+                <p>Specialisatie: Software Development</p>
+            </article>
+            <article>
+                <h3>Middlebare . Eijkhagen</h3>
+                <p class="periode"><time datetime="2025">2021</time> – <time datetime="2026">2025</time></p>
+            </article>
+            <article>
+                <h3>Baisschool . Wereldwijs</h3>
+                <p class="periode"><time datetime="2025">2013</time> – <time datetime="2026">2021</time></p>
+            </article>
+        </section>
 
-<section>
-    <h2>Profiel</h2>
+        <section aria-labelledby="vaardigheden-heading">
+            <h2 id="vaardigheden-heading">Vaardigheden</h2>
+            <ul class="skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li class="skill skill-python">
+                    <details>
+                        <summary>Python</summary>
+                        <ul class="skill-dropdown">
+                            <li>Print statements en comments</li>
+                            <li>Variabelen en datatypes</li>
+                            <li>Rekenkundige bewerkingen</li>
+                            <li>Gebruikersinput verwerken</li>
+                            <li>String interpolation met f-strings</li>
+                            <li>If, elif en else</li>
+                            <li>Relationele en logische operatoren</li>
+                            <li>Random numbers gebruiken</li>
+                            <li>Loops met while en for</li>
+                        </ul>
+                    </details>
+                </li>
+                <li>Git & GitHub</li>
+                <li>Nederlands (Moedertaal), Engels (goed)</li>
+            </ul>
+        </section>
 
-    <p>
-        Gemotiveerde student met passie voor software development,
-        websites en AI-projecten.
-    </p>
-</section>
+        <section aria-labelledby="projecten-heading">
+            <h2 id="projecten-heading">Projecten</h2>
+            <article>
+                <h3>Snake Game (Python)</h3>
+                <ul>
+                    <li>Zelf een Snake game gebouwd in Python met Tkinter.</li>
+                    <li>Logica gemaakt voor beweging, score, botsingen en game over.</li>
+                    <li>Besturing toegevoegd met pijltjestoetsen en WASD.</li>
+                </ul>
+            </article>
 
-<section>
-    <h2>Vaardigheden</h2>
+            <article>
+                <h3>Mees kantine</h3>
+                <ul>
+                    <li>Eigen website ontworpen en gebouwd om het project Mees kantine te tonen.</li>
+                    <li>Gebruik gemaakt van responsive layout en duidelijke navigatie.</li>
+                    <li>Link: <a href="https://github.com/jaydie2008">github.com/jaydie2008</a></li>
+                </ul>
+            </article>
+        </section>
 
-    <ul class="skills">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>GitHub</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Projecten</h2>
-
-    <article>
-        <h3>Snake Game</h3>
-
-        <p>
-            Zelf gebouwd in Python met Tkinter.
-        </p>
-    </article>
-
-    <article>
-        <h3>Portfolio Website</h3>
-
-        <p>
-            Responsive website gemaakt met HTML en CSS.
-        </p>
-    </article>
-</section>
-
-</main>
-
+        <section aria-labelledby="certificaten-heading">
+            <h2 id="certificaten-heading">Certificaten</h2>
+            <ul>
+                <li>Nog bezig met het certificaat AZ-900.</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
