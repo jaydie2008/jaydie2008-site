@@ -1,63 +1,202 @@
 *{
-    box-sizing:border-box;
+	box-sizing: border-box;
 }
 
-body{
-    margin:0;
-    font-family:Segoe UI,sans-serif;
-    background:linear-gradient(135deg,#c4c6ca,#b35b41);
-    padding:30px;
+:root {
+	--bg-start: #c4c6caa8;
+	--bg-end: #b35b41;
+	--bg-accent: rgba(207, 159, 97, 0.28);
+	--card-bg: #c27c7c8f;
+	--text-main: #0f172a;
+	--text-muted: #000000;
+	--border-soft: #ffffff;
+	--accent: #1b1b1b;
+	--accent-soft: #535a59;
 }
 
-.cv{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
+body {
+	margin: 0;
+	font-family: "Segoe UI", Arial, sans-serif;
+	background:
+		radial-gradient(circle at top right, var(--bg-accent), transparent 30%),
+		linear-gradient(140deg, var(--bg-start) 0%, var(--bg-end) 100%);
+	color: var(--text-main);
+	line-height: 1.6;
+	padding: 28px 16px;
 }
 
-.header{
-    margin-bottom:30px;
+.cv {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 36px;
+	background: var(--card-bg);
+	border-radius: 16px;
+	border: 1px solid var(--border-soft);
+	box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12);
 }
 
-.header-content{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
+.header {
+	border-bottom: 2px solid var(--border-soft);
+	padding-bottom: 24px;
+	margin-bottom: 30px;
 }
 
-.profile-photo{
-    width:150px;
-    height:150px;
-    object-fit:cover;
-    border-radius:50%;
-    border:4px solid #333;
+.header-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
 }
 
-h1{
-    margin:0;
-    font-size:40px;
+.profile-photo {
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 4px solid var(--accent-soft);
+	background: #f8fafc;
 }
 
-.functie{
-    color:#555;
-    font-weight:bold;
+h1 {
+	margin: 0;
+	font-size: clamp(28px, 4vw, 36px);
+	letter-spacing: 0.2px;
 }
 
-section{
-    margin-top:25px;
+.functie {
+	font-size: 18px;
+	margin: 8px 0;
+	color: var(--text-muted);
+	font-weight: 600;
 }
 
-h2{
-    border-left:5px solid #000;
-    padding-left:10px;
+address {
+	font-style: normal;
+	color: var(--text-muted);
 }
 
-.skills{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
+address a {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+address a:hover {
+	text-decoration: underline;
+}
+
+a:focus-visible,
+summary:focus-visible {
+	outline: 3px solid var(--accent-soft);
+	outline-offset: 3px;
+	border-radius: 6px;
+}
+
+section {
+	margin-bottom: 16px;
+	padding: 16px 18px;
+	border: 1px solid var(--border-soft);
+	border-radius: 12px;
+	background: #fcfdff;
+}
+
+h2 {
+	font-size: 20px;
+	margin-bottom: 8px;
+	border-left: 4px solid var(--accent);
+	padding-left: 10px;
+}
+
+h3 {
+	margin: 10px 0 0;
+	font-size: 16px;
+}
+
+.periode {
+	margin: 2px 0 8px;
+	font-size: 14px;
+	color: #64748b;
+}
+
+ul {
+	margin: 8px 0 0 18px;
+	padding: 0;
+}
+
+article + article {
+	margin-top: 12px;
+	padding-top: 12px;
+	border-top: 1px dashed var(--border-soft);
+}
+
+.skills {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 4px 20px;
+}
+
+.skills > li {
+	margin-left: 0;
+}
+
+.skill details {
+	background: #f0f6ff;
+	border: 1px solid #c7dbff;
+	border-radius: 10px;
+	padding: 10px 12px;
+}
+
+.skill summary {
+	cursor: pointer;
+	font-weight: 700;
+	list-style: none;
+}
+
+.skill summary::-webkit-details-marker {
+	display: none;
+}
+
+.skill summary::after {
+	content: "+";
+	float: right;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.skill details[open] summary::after {
+	content: "-";
+}
+
+.skill-dropdown {
+	margin: 10px 0 0 18px;
+	padding: 0;
+}
+
+.skill-dropdown li {
+	margin-bottom: 4px;
+}
+
+@media (max-width: 640px) {
+	body {
+		padding: 0;
+	}
+
+	.cv {
+		margin: 0;
+		border-radius: 0;
+		padding: 20px;
+	}
+
+	.header-content {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+
+	.profile-photo {
+		width: 96px;
+		height: 96px;
+	}
+
+	.skills {
+		grid-template-columns: 1fr;
+	}
 }
