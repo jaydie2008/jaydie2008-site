@@ -116,16 +116,46 @@ main {
 
 /* ── HERO ── */
 .hero {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  grid-template-columns: 1fr auto;
   padding: 4px 8px;
   border-radius: 16px;
   background: rgba(15, 23, 42, 0.04);
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
   transform-origin: left center;
   margin-bottom: 64px;
+}
+
+/* Ensure hero text is centered inside hero containers */
+.hero .hero-text {
+  text-align: center;
+  width: 100%;
+  max-width: 70ch;
+}
+
+/* tighter vertical spacing for hero and ensure centered block */
+.hero {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.hero .hero-text {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Ensure hero-mark spans full width and centers its inner text */
+.hero-mark {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure hero container uses full available width inside main */
+.hero {
+  width: 100%;
 }
 
 .nav-logo img {
@@ -191,13 +221,21 @@ main {
   padding: 18px 20px;
 }
 
-/* ── DOEL ── */
+/* ── DOEL (goal) ── */
 .doel {
   margin-bottom: 64px;
+  text-align: center;
+}
+
+.doel .section-title {
+  text-align: center;
 }
 
 .doel-box {
   padding: 28px 32px;
+  margin: 0 auto;
+  max-width: 70ch;
+  text-align: center;
 }
 
 /* ── FOOTER ── */

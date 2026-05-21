@@ -6,11 +6,14 @@ img {
 }
 
 nav,
-.hero,
-.section,
-footer {
-  width: min(1100px, calc(100% - 32px));
-  margin: 0 auto;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px 0 16px;
+  text-align: center;
 }
 
 nav {
@@ -41,11 +44,29 @@ nav a.active {
   text-decoration: underline;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 24px;
-  padding: 32px 0 16px;
+/* hero is handled above (centered flex layout) */
+
+/* In the about hero, center the primary hero text block */
+.hero .hero-text {
+  text-align: center;
+  width: 100%;
+  max-width: 70ch;
+  margin: 0 auto;
+}
+
+/* Ensure hero-mark centers its content in the about page too */
+.hero-mark {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure large hero heading scales and stays centered within column */
+.hero h1 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .hero-left,
@@ -194,7 +215,6 @@ footer span {
 }
 
 @media (max-width: 900px) {
-  .hero,
   .about-grid {
     grid-template-columns: 1fr;
   }
