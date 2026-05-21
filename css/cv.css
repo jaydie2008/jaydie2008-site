@@ -31,7 +31,7 @@ nav a:hover {
 	padding: 28px;
 	background: var(--panel);
 	border-radius: 12px;
-	border: 1px solid rgba(98,243,255,0.06);
+	border: 1px solid rgba(197,140,255,0.14);
 	box-shadow: 0 12px 30px rgba(0,0,0,0.5);
 }
 
@@ -53,7 +53,7 @@ nav a:hover {
 	height: 112px;
 	border-radius: 50%;
 	object-fit: cover;
-	border: 3px solid rgba(98,243,255,0.12);
+	border: 3px solid rgba(197,140,255,0.2);
 	background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
 }
 
@@ -142,7 +142,7 @@ article + article {
 
 .skill details {
 	background: rgba(255,255,255,0.02);
-	border: 1px solid rgba(98,243,255,0.05);
+	border: 1px solid rgba(197,140,255,0.12);
 	border-radius: 10px;
 	padding: 10px 12px;
 }

@@ -10,12 +10,12 @@
 /* ── THEME VARS (Jarvis-lightweight) ── */
 :root {
   color-scheme: dark;
-  --bg: #07131f;
-  --bg-soft: rgba(11, 24, 38, 0.7);
-  --panel: rgba(15, 30, 44, 0.7);
-  --text: #d8f4ff;
-  --muted: #8eb7c7;
-  --accent: #62f3ff;
+  --bg: #12071f;
+  --bg-soft: rgba(28, 12, 50, 0.72);
+  --panel: rgba(22, 11, 40, 0.78);
+  --text: #f1e6ff;
+  --muted: #bba6da;
+  --accent: #c58cff;
   --glass: rgba(255,255,255,0.02);
   --max-width: 1100px;
 }
@@ -26,8 +26,10 @@ body {
   font-family: 'DM Mono', monospace;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(98, 243, 255, 0.06), transparent 34%),
-    linear-gradient(160deg, #02070b 0%, var(--bg) 46%, #02070b 100%);
+    radial-gradient(circle at top left, rgba(197, 140, 255, 0.20), transparent 30%),
+    radial-gradient(circle at 82% 16%, rgba(126, 72, 255, 0.16), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(255, 105, 180, 0.08), transparent 30%),
+    linear-gradient(160deg, #05010b 0%, var(--bg) 46%, #05010b 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -119,12 +121,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px 8px;
-  border-radius: 16px;
-  background: rgba(15, 23, 42, 0.04);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   transform-origin: left center;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
 }
 
 /* Ensure hero text is centered inside hero containers */
@@ -136,8 +138,8 @@ main {
 
 /* tighter vertical spacing for hero and ensure centered block */
 .hero {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .hero .hero-text {
