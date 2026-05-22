@@ -12,12 +12,12 @@
 
   <nav>
     <span class="nav-logo">JN</span>
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About Me</a>
-    <a href="projects.html">Projects</a>
-    <a href="cv.html">CV</a>
-    <a href="kd.html">KD</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.php">Home</a>
+    <a href="about.php" class="active">About Me</a>
+    <a href="projects.php">Projects</a>
+    <a href="cv.php">CV</a>
+    <a href="kd.php">KD</a>
+    <a href="contact.php">Contact</a>
     <a href="assets/Jayden_Niepce_CV.pdf" download class="btn-dl">Download CV</a>
   </nav>
 
@@ -35,59 +35,53 @@
         </h1>
 
         <p class="intro">
-          I am a software development student from the Netherlands who enjoys building projects with C#. 
-          I like creating games, learning new technologies, going to the gym, and diving. 
+          I am a software development student from the Netherlands who enjoys building projects with C#.
+          I like creating games, learning new technologies, going to the gym, and diving.
           My goal is to continue improving as a developer and study HBO Game Development in the future.
         </p>
 
         <div class="cta-row">
-          <a href="projects.html" class="btn btn-primary">View Projects</a>
-          <a href="about.html" class="btn btn-outline">About Me</a>
-          <a href="contact.html" class="btn btn-outline">Contact</a>
+          <a href="projects.php" class="btn btn-primary">View Projects</a>
+          <a href="about.php" class="btn btn-outline">About Me</a>
+          <a href="contact.php" class="btn btn-outline">Contact</a>
         </div>
       </div>
     </section>
 
     <section class="stats">
-  <div class="stat">
-    <span class="stat-val">C#</span>
-    <span class="stat-label">Main Programming Language</span>
-  </div>
+      <div class="stat">
+        <span class="stat-val">C#</span>
+        <span class="stat-label">Main Programming Language</span>
+      </div>
+      <div class="stat">
+        <span class="stat-val">Unity</span>
+        <span class="stat-label">Game Development Engine</span>
+      </div>
+      <div class="stat">
+        <span class="stat-val">MBO 4</span>
+        <span class="stat-label">Software Development Student</span>
+      </div>
+      <div class="stat">
+        <span class="stat-val">NL</span>
+        <span class="stat-label">Based in The Netherlands</span>
+      </div>
+    </section>
 
-  <div class="stat">
-    <span class="stat-val">Unity</span>
-    <span class="stat-label">Game Development Engine</span>
-  </div>
+    <section class="doel">
+      <h2 class="section-title">What drives me</h2>
+      <div class="doel-box">
+        <p>
+          I enjoy turning ideas into real software and games.
+          I started learning programming because I wanted to create my own projects and improve every day.
+          Right now I focus on C# and software development, while also experimenting with new ideas and designs for the future.
+        </p>
+        <p>
+          In the future, I want to work on games that people truly enjoy playing, whether in a studio or as an indie developer.
+          This website is where I share my progress, projects, and journey as a developer.
+        </p>
+      </div>
+    </section>
 
-  <div class="stat">
-    <span class="stat-val">MBO 4</span>
-    <span class="stat-label">Software Development Student</span>
-  </div>
-
-  <div class="stat">
-    <span class="stat-val">NL</span>
-    <span class="stat-label">Based in The Netherlands</span>
-  </div>
-</section>
-
-<section class="doel">
-  <h2 class="section-title">What drives me</h2>
-
-  <div class="doel-box">
-    <p>
-      I enjoy turning ideas into real software and games. 
-      I started learning programming because I wanted to create my own projects and improve every day. 
-      Right now I focus on C#, and software development, while also experimenting with new ideas and designs for the future.
-    </p>
-
-    <p>
-      In the future, I want to work on games that people truly enjoy playing, whether in a studio or as an indie developer. 
-      This website is where I share my progress, projects, and journey as a developer.
-    </p>
-  </div>
-  </section>
-
-    <!-- Preserve About content below, but inside main so styles match index.html -->
     <section class="section" id="about">
       <div class="section-header">
         <span class="section-num">01 —</span>
@@ -143,7 +137,6 @@
       </div>
     </section>
 
-    <!-- Keep the rest of the original About sections so page remains informative -->
     <section class="section" id="skills">
       <div class="section-header">
         <span class="section-num">02 —</span>
@@ -153,12 +146,12 @@
         <div class="skill-card">
           <div class="skill-badge"></div>
           <div class="skill-name">C#</div>
-          <div class="skill-sub">Programmeren</div>
+          <div class="skill-sub">Programming</div>
         </div>
         <div class="skill-card">
           <div class="skill-badge"></div>
           <div class="skill-name">HTML / CSS</div>
-          <div class="skill-sub">Webontwikkeling</div>
+          <div class="skill-sub">Web Development</div>
         </div>
         <div class="skill-card">
           <div class="skill-badge"></div>
@@ -168,11 +161,11 @@
         <div class="skill-card">
           <div class="skill-badge"></div>
           <div class="skill-name">Git / GitHub</div>
-          <div class="skill-sub">Versiebeheer</div>
+          <div class="skill-sub">Version Control</div>
         </div>
         <div class="skill-card">
           <div class="skill-badge"></div>
-          <div class="skill-name">Probleemoplossen</div>
+          <div class="skill-name">Problem Solving</div>
           <div class="skill-sub">Soft Skill</div>
         </div>
       </div>

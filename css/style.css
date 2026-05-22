@@ -147,6 +147,27 @@ main {
   display: block;
 }
 
+/* Home page hero should stay centered instead of shifting to the right */
+.home-page .hero {
+  display: block;
+}
+
+.home-page .hero-mark {
+  display: none;
+}
+
+.home-page .hero-text {
+  max-width: 70ch;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-page .cta-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* Ensure hero-mark spans full width and centers its inner text */
 .hero-mark {
   width: 100%;
