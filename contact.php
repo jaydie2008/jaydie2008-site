@@ -12,7 +12,7 @@ if (!empty($_GET["errors"])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact – Jayden Niepce</title>
   <link rel="icon" href="assets/logo-jayden-niepce.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20260909-3">
   <link rel="stylesheet" href="css/contact.css">
   <style>
     .melding {
@@ -30,6 +30,11 @@ if (!empty($_GET["errors"])) {
       background: rgba(255, 80, 80, 0.08);
       border: 1px solid rgba(255, 80, 80, 0.25);
       color: #ffaaaa;
+    }
+    .melding-succes,
+    .melding-fout {
+      border: none;
+      background: transparent;
     }
     .melding ul {
       margin: 0.4rem 0 0 1.2rem;
@@ -103,11 +108,11 @@ if (!empty($_GET["errors"])) {
       <ul class="socials-list">
         <li>
           <span class="social-label">GitHub</span>
-          <a href="https://github.com/jaydie2008" target="_blank">github.com/jaydie2008</a>
+          <a href="https://github.com/jaydie2008" target="_blank" rel="noopener noreferrer">github.com/jaydie2008</a>
         </li>
         <li>
           <span class="social-label">LinkedIn</span>
-          <a href="https://www.linkedin.com/in/jayden-niepce-52277b410/" target="_blank">linkedin.com/in/jayden</a>
+          <a href="https://www.linkedin.com/in/jayden-niepce-52277b410/" target="_blank" rel="noopener noreferrer">linkedin.com/in/jayden</a>
         </li>
         <li>
           <span class="social-label">Email</span>

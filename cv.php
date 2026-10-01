@@ -6,7 +6,7 @@
   <title>CV - Jayden Niepce</title>
   <meta name="description" content="CV of Jayden Niepce, a student interested in software and front-end development.">
   <link rel="icon" href="assets/logo-jayden-niepce.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20260909-3">
   <link rel="stylesheet" href="css/cv.css">
 </head>
 <body>
@@ -135,9 +135,43 @@
 
     <section aria-labelledby="certificaten-heading">
       <h2 id="certificaten-heading">Certifications</h2>
-      <ul>
-        <li>Currently working towards the AZ-900 certification.</li>
-      </ul>
+      <div class="cert-grid">
+        <figure class="cert-card">
+          <a href="#cert-1" class="cert-link" aria-label="Open certificate image: Challenge Zone - Telefoongesprek">
+            <img src="assets/images/telefoon gesprek.jpg" alt="Certificate for handling a live customer phone call at The Challenge Zone" loading="lazy">
+          </a>
+          <figcaption>Challenge Zone - Telefoongesprek</figcaption>
+        </figure>
+
+        <figure class="cert-card">
+          <a href="#cert-2" class="cert-link" aria-label="Open certificate image: Erasmus Plus VET - Certificate of Appreciation">
+            <img src="assets/images/romaine.jpg" alt="Certificate of appreciation for Erasmus Plus VET mobility support" loading="lazy">
+          </a>
+          <figcaption>Erasmus+ VET - Certificate of Appreciation</figcaption>
+        </figure>
+
+        <figure class="cert-card">
+          <a href="#cert-3" class="cert-link" aria-label="Open certificate image: Digitale Vaardigheden Gevorderd">
+            <img src="assets/images/digitale vaardigheden.jpg" alt="Certificate for advanced digital skills exam with score" loading="lazy">
+          </a>
+          <figcaption>Digitale Vaardigheden Gevorderd</figcaption>
+        </figure>
+      </div>
+
+      <div id="cert-1" class="cert-lightbox" aria-hidden="true">
+        <a href="#certificaten-heading" class="cert-lightbox-close" aria-label="Close enlarged certificate">x</a>
+        <img src="assets/images/telefoon gesprek.jpg" alt="Enlarged certificate for handling a live customer phone call at The Challenge Zone">
+      </div>
+
+      <div id="cert-2" class="cert-lightbox" aria-hidden="true">
+        <a href="#certificaten-heading" class="cert-lightbox-close" aria-label="Close enlarged certificate">x</a>
+        <img src="assets/images/romaine.jpg" alt="Enlarged certificate of appreciation for Erasmus Plus VET mobility support">
+      </div>
+
+      <div id="cert-3" class="cert-lightbox" aria-hidden="true">
+        <a href="#certificaten-heading" class="cert-lightbox-close" aria-label="Close enlarged certificate">x</a>
+        <img src="assets/images/digitale vaardigheden.jpg" alt="Enlarged advanced digital skills certificate with score">
+      </div>
     </section>
   </main>
 
