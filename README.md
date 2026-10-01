@@ -62,3 +62,7 @@ My goal is to continue improving as a software developer and gain more experienc
 GitHub profile:
 
 https://github.com/jaydie2008
+
+## Linkedin
+
+https://www.linkedin.com/in/jayden-niepce-52277b410/?isSelfProfile=true
