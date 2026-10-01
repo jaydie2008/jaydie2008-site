@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap');
+
 /* ── RESET ── */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap');
 
 /* ── THEME VARS (Jarvis-lightweight) ── */
 :root {
@@ -15,7 +15,10 @@
   --panel: rgba(22, 11, 40, 0.78);
   --text: #f1e6ff;
   --muted: #bba6da;
+  --text-muted: #bba6da;
   --accent: #c58cff;
+  --accent-soft: rgba(197, 140, 255, 0.28);
+  --border-soft: rgba(255,255,255,0.08);
   --glass: rgba(255,255,255,0.02);
   --max-width: 1100px;
 }
@@ -25,13 +28,16 @@ body {
   min-height: 100vh;
   font-family: 'DM Mono', monospace;
   color: var(--text);
-  background:
-    radial-gradient(circle at top left, rgba(197, 140, 255, 0.20), transparent 30%),
-    radial-gradient(circle at 82% 16%, rgba(126, 72, 255, 0.16), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(255, 105, 180, 0.08), transparent 30%),
-    linear-gradient(160deg, #05010b 0%, var(--bg) 46%, #05010b 100%);
+  background: linear-gradient(145deg, #08030f 0%, var(--bg) 55%, #08030f 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
 /* ── TYPOGRAPHY (About-like, applied site-wide) ── */
@@ -58,7 +64,17 @@ p, li, dd {
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.7;
+  max-width: 70ch;
   margin-bottom: 1rem;
+}
+
+small,
+label,
+button,
+input,
+textarea,
+select {
+  font-family: 'DM Mono', monospace;
 }
 
 main {
@@ -82,10 +98,10 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 12px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  margin-bottom: 24px;
+  padding: 12px 28px;
+  background: rgba(18,7,32,0.94);
+  border: 1px solid rgba(197,140,255,0.16);
 }
 
 nav a {
@@ -113,7 +129,11 @@ nav, .hero, main, footer {
 main {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 80px 32px 100px;
+  padding: 36px 32px 72px;
+  background: var(--panel);
+  border: 1px solid rgba(197,140,255,0.14);
+  border-radius: 24px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.28);
 }
 
 /* ── HERO ── */
@@ -122,11 +142,11 @@ main {
   align-items: center;
   justify-content: center;
   padding: 0;
-  border-radius: 0;
+  border-radius: 24px;
   background: transparent;
   box-shadow: none;
   transform-origin: left center;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 /* Ensure hero text is centered inside hero containers */
@@ -166,6 +186,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 /* Ensure hero-mark spans full width and centers its inner text */
@@ -211,12 +232,16 @@ main {
 /* ── STATS ── */
 .stats {
   display: flex;
+  gap: 12px;
   margin-bottom: 64px;
 }
 
 .stat {
   flex: 1;
   padding: 20px 24px;
+  border: 1px solid rgba(255,255,255,0.03);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.01);
 }
 
 .stat-val,
@@ -259,6 +284,9 @@ main {
   margin: 0 auto;
   max-width: 70ch;
   text-align: center;
+  border: 1px solid rgba(255,255,255,0.03);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.01);
 }
 
 /* ── FOOTER ── */
@@ -276,6 +304,16 @@ footer p {
 
 }
 
+/* Keep the shared layout open and free of boxed borders. */
+nav,
+main,
+.stat,
+.doel-box {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
 
 /* ── RESPONSIVE ── */
 @media (max-width: 640px) {
@@ -289,7 +327,8 @@ footer p {
   }
 
   main {
-    padding: 40px 16px 60px;
+    padding: 20px;
+    border-radius: 24px;
   }
 
   .hero {
@@ -306,50 +345,5 @@ footer p {
 
   .stat {
     flex: 1 1 50%;
-  }
-}
-
-.nav-logo {
-  display: inline-block;
-  position: relative;
-  transform-origin: left center;
-  animation: logoIntro 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-.nav-logo::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.25rem;
-  width: 100%;
-  height: 2px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: left;
-  opacity: 0.75;
-  animation: logoUnderline 900ms cubic-bezier(0.22, 1, 0.36, 1) 140ms both;
-}
-
-@keyframes logoIntro {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px) scale(0.9);
-    filter: blur(6px);
-  }
-
-  60% {
-    opacity: 1;
-    filter: blur(0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .nav-logo {
-    animation: none;
   }
 }
